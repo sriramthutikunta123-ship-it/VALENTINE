@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For KANNA ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: white;
+      text-align: center;
+    }
+    .box {
+      background: rgba(0,0,0,0.2);
+      padding: 40px;
+      border-radius: 20px;
+    }
+    h1 { font-size: 32px; }
+    button {
+      margin: 20px;
+      padding: 14px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .yes {
+      background: #00ff9d;
+      color: #000;
+    }
+    .no {
+      background: #ffccd5;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>KANNA ❤️</h1>
+  <h2>Can you be my Valentine?</h2>
+  <button class="yes" onclick="yesClick()">YES 💖</button>
+  <button class="no" onclick="noClick()">NO 🙈</button>
+</div>
+
+<script>
+  const cuteMessages = [
+    "Are you sure? 🥺",
+    "Think once more, pleaseee 😭",
+    "I promise unlimited love 💕",
+    "Okay… but my heart says YES 💔",
+    "Last chance, KANNA 🥹❤️"
+  ];
+  let count = 0;
+
+  function noClick() {
+    alert(cuteMessages[count % cuteMessages.length]);
+    count++;
+  }
+
+  function yesClick() {
+    window.location.href = "love.html";
+  }
+</script>
+
+</body>
+</html>
